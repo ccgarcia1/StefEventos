@@ -1,4 +1,3 @@
-# StefEventos
 Project as part of Stefanini Jornada de conhecimento - Angular
 =======
 # Stefeventos
