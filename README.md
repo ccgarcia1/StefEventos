@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # StefEventos
-Project as part of Stefanini training - Angular
+Project as part of Stefanini Jornada de conhecimento - Angular
 =======
 # Stefeventos
 
