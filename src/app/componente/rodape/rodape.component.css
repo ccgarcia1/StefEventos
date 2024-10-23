@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #00D6FD;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.social-media {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media li {
+    display: inline;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
