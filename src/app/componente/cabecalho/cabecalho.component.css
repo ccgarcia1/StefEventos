@@ -1,34 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.bg-stef {
+    --bs-bg-opacity: 1;
+    background-color: #00D6FD !important;
 }
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #00D6FD;
-    padding: 20px;
-}
-
-.menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu li {
-    display: inline;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
+.nav-link {
+    color: #f8f9fa; }
