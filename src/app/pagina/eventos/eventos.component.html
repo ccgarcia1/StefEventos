@@ -1,1 +1,41 @@
-<p>Confira os nossos próximos eventos</p>
+<div class="container">
+
+    <h3>
+        "Descubra os próximos eventos que preparamos para você!"
+    </h3>
+    <div class="filtros">
+        <div class="w-100">
+            <label for="nome" class="form-label">Nome do Evento</label>
+            <input
+            type="text"
+            class="form-control"
+            id="nome"
+            [formControl] = "filtroNome"
+            placeholder="Pesquise pelo nome do evento"
+            (input)="onChangeFiltroNome()"
+            />
+        </div>
+        <div class="w-100">
+            <label for="local" class="form-label">Local do Evento</label>
+            <input
+            type="text"
+            class="form-control"
+            id="local"
+            [formControl] = "filtroLocal"
+            placeholder="Pesquise pelo local do evento"
+            (input)="onChangeFiltroLocal()"
+            />
+        </div>
+    </div>
+    
+    <div class="cards">
+        <!--<p *ngFor="let evento of listaEventos">{{ evento.titulo }} - {{evento.local}}</p> -->
+        <app-card  
+        *ngFor="let evento of listaEventosFiltrada"
+        class="card-evento"
+        [titulo]="evento.titulo"
+        [local]="evento.local"
+        [data]="evento.data"
+        />
+    </div>
+</div>

@@ -13,6 +13,7 @@ export class ContatoComponent {
   formContato: FormGroup;
 
   contatoEnviado : boolean = false;
+  isFocused = false;
 
   constructor(private formBuilder: FormBuilder){
     this.formContato = this.formBuilder.group({

@@ -13,11 +13,18 @@
                 <div>
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" formControlName="email">
+                    <small *ngIf="this.formContato.get('email')?.invalid">O email é obrigatório</small>
                 </div>
                 <div>
                     <label for="mensagem" class="form-label">Mensagem</label>
-                    <textarea class="form-control" id="mensagem" formControlName="mensagem"></textarea>
-                    <small *ngIf="formContato.get('mensagem')?.hasError('minlength') && (formContato.get('mensagem')?.dirty || formContato.get('mensagem')?.touched)">O campo deve conter 5 caracteres</small>
+                    <textarea 
+                    class="form-control" 
+                    id="mensagem" 
+                    formControlName="mensagem"
+                    (focus)="isFocused  = true"
+                    (blur)="isFocused  = false"
+                    ></textarea>
+                    <small *ngIf="this.formContato.get('mensagem')?.invalid">O campo mensagem deve ser preenchido</small>
                 </div>
                 <button type="submit" class="btn btn-primary" (click)="onsend()">Enviar</button>
             </form>
