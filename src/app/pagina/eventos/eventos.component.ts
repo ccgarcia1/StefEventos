@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CardComponent } from "../../components/card/card.component";
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { ModalCadastrarEventoComponent } from "../../paginas/eventos/modal-cadastrar-evento/modal-cadastrar-evento.component";
 
 interface Evento {
   titulo: string;
@@ -13,7 +14,7 @@ interface Evento {
 @Component({
   selector: 'app-eventos',
   standalone: true,
-  imports: [CommonModule, CardComponent, ReactiveFormsModule],
+  imports: [CommonModule, CardComponent, ReactiveFormsModule, ModalCadastrarEventoComponent],
   templateUrl: './eventos.component.html',
   styleUrl: './eventos.component.css'
 })
